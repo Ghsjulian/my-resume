@@ -1,0 +1,46 @@
+/* SECTION STYLING HERE */
+section {
+    margin: 4.5rem 0;
+}
+.two-row {
+    margin: 0.5rem 0.5rem;
+}
+.col {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem auto;
+    background: transparent;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+   /* box-shadow: var(--base-shadow);*/
+    border-radius: 5px;
+}
+.col .hero-heading {
+    color: var(--blue);
+    font-weight: 900;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+.col .intro {
+    color: var(--btn-hover);
+    text-align: center;
+    margin: 0.3rem auto;
+}
+.col .hero-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.hero-img img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    transition: 0.3s ease-in;
+    box-shadow: var(--base-shadow);
+    border-radius: 50%;
+}

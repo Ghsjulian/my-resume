@@ -1,0 +1,50 @@
+/* RESPONSIVE LAYOUT FOR MOBILE DEVICE */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        padding: 0.7rem 1rem;
+        gap: 5px;
+    }
+    .header .logo {
+    }
+    header .links {
+        display: none;
+    }
+    header .nav-btn {
+        display: block;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+    header .nav-btn i {
+        color: var(--gray);
+        font-size: 18px;
+    }
+    /* Styling page section */
+    .row {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    header {
+        padding: 0.5rem 1rem;
+        justify-content: space-around;
+    }
+    .header .logo {
+    }
+    header .links {
+        display: flex;
+    }
+    header .nav-btn {
+        display: none;
+    }
+    .links h3 {
+        display: none;
+    }
+    /* Section Page */
+    .two-row {
+        display: flex;
+        padding: 0.5rem;
+        gap: 2rem;
+    }
+}
