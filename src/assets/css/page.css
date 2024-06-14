@@ -14,7 +14,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: justify;
-   /* box-shadow: var(--base-shadow);*/
+    /* box-shadow: var(--base-shadow);*/
     border-radius: 5px;
 }
 .col .hero-heading {
@@ -43,4 +43,10 @@ section {
     transition: 0.3s ease-in;
     box-shadow: var(--base-shadow);
     border-radius: 50%;
+}
+.col article {
+    text-align: justify;
+    line-height: 1.8rem;
+    font-weight: 600;
+    /* text-shadow: var(--base-shadow); */
 }
