@@ -2,8 +2,14 @@ import React, { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ReactTyped } from "react-typed";
 import ghs from "../assets/images/ghs_1.png";
-import download from "../assets/icons/download.png"
-import rightarrow from "../assets/icons/rightarrow.png"
+import rightarrow from "../assets/icons/rightarrow.png";
+import download from "../assets/icons/download.png";
+import facebook from "../assets/icons/fb.png";
+import youtube from "../assets/icons/youtube.png";
+import instagram from "../assets/icons/insta.png";
+import github from "../assets/icons/gh.png";
+import twiter from "../assets/icons/t.png";
+import google from "../assets/icons/google.png";
 
 const HeroSection = () => {
     return (
@@ -53,6 +59,34 @@ const HeroSection = () => {
                     </article>
                 </div>
                 <div className="bottom-flex">
+                    <div className="social">
+                        <NavLink to="/" id="download">
+                            <img
+                                className="icon"
+                                src={facebook}
+                                alt="Facebook"
+                            />
+                        </NavLink>
+                        <NavLink to="/" id="download">
+                            <img className="icon" src={youtube} alt="YouTube" />
+                        </NavLink>
+                        <NavLink to="/" id="download">
+                            <img className="icon" src={google} alt="Google" />
+                        </NavLink>
+                        <NavLink to="/" id="download">
+                            <img className="icon" src={twiter} alt="Twiter" />
+                        </NavLink>
+                        <NavLink to="/" id="download">
+                            <img
+                                className="icon"
+                                src={instagram}
+                                alt="Instagram"
+                            />
+                        </NavLink>
+                        <NavLink to="/" id="download">
+                            <img className="icon" src={github} alt="GitHub" />
+                        </NavLink>
+                    </div>
                     <div className="button-area">
                         <NavLink to="/" id="see-more">
                             See More
@@ -62,6 +96,7 @@ const HeroSection = () => {
                                 alt="See More"
                             />
                         </NavLink>
+
                         <NavLink to="/" id="download">
                             Download CV
                             <img
@@ -70,9 +105,6 @@ const HeroSection = () => {
                                 alt="Download CV"
                             />
                         </NavLink>
-                    </div>
-                    <div className="social">
-                        <NavLink to="/"></NavLink>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import menu from "../assets/icons/menu.png";
 import close from "../assets/icons/close.png";
+import call from "../assets/icons/call.png";
 
 const Header = () => {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ const Header = () => {
                 <NavLink to="/">Services</NavLink>
                 <NavLink to="/">Projects</NavLink>
                 <NavLink id="talk" to="/">
-                    Let's Talk
+                   <img src={call} alt="Talk Now"/> Let's Talk
                 </NavLink>
             </div>
             <div onClick={openNav} className="nav-btn">

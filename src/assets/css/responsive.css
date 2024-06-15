@@ -1,5 +1,9 @@
 /* RESPONSIVE LAYOUT FOR MOBILE DEVICE */
 @media screen and (max-width: 768px) {
+    html,
+    body {
+        font-size: 90%;
+    }
     header {
         justify-content: space-between;
         padding: 0.7rem 1rem;
@@ -10,7 +14,8 @@
     header .links {
         display: none;
     }
-    header button,.nav-btn {
+    header button,
+    .nav-btn {
         display: block;
         outline: none;
         border: none;
@@ -21,6 +26,7 @@
         color: var(--gray);
         font-size: 18px;
     }
+
     /* Styling page section */
     .row {
         flex-direction: column;
@@ -47,5 +53,15 @@
         display: flex;
         padding: 0.5rem;
         gap: 2rem;
+    }
+    .col .button-area {
+        padding: 0.5rem;
+        gap: 1.5rem;
+    }
+    .col .button-area a {
+        margin: 1.8rem;
+    }
+    .col .social a {
+        margin: 0.5rem 1rem;
     }
 }

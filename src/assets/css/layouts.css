@@ -137,7 +137,7 @@ header .links {
     border-bottom: 2px solid var(--orange);
 }
 .links #talk {
-    display: inline;
+    display: flex;
     text-align: center;
     align-items: center;
     margin-left: 1rem;
@@ -147,10 +147,23 @@ header .links {
     color: var(--bg);
     font-weight: 500;
     padding: 0.5rem 0.8rem;
+    color: var(--gray);
+    background: var(--header-bg);
+    box-shadow: var(--base-shadow);
+    transition: 0.3s ease-in;
 }
 .links #talk:hover {
-    border: none;
-    background: var(--btn-hover);
+    outline: none;
+    background: transparent;
+    box-shadow: var(--base-shadow-active);
+    color: var(--baseDark2);
+    border-color: var(--base3);
+}
+.links #talk img {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+    margin: 0 0.2rem;
 }
 header .mobile-menu {
     display: block;
@@ -182,10 +195,11 @@ header .mobile-menu {
     padding: 0.5rem;
 }
 .mobile-menu #talk {
-    margin: 0.5rem 0.2rem;
+    margin: 1.2rem 0.2rem;
     text-align: center;
     margin-top: 4.2rem;
-    width: 100px;
+    width: 140px;
+    font-size: 15px;
 }
 
 /* HEADER STYLING */
