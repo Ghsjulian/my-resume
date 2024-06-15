@@ -23,16 +23,20 @@ section {
     margin: 0.5rem auto;
 }
 .col .flex .hero-heading {
-    color: var(--blue);
+    color: var(--header-bg);
     font-weight: 900;
     text-align: center;
     margin: 0.5rem auto;
+    text-shadow:
+        2px 2px 3px rgb(0, 0, 0),
+        -2px 2px 2px rgb(224, 252, 255);
 }
 .col .flex .intro {
     font-size: 1.3rem;
-    color: var(--orange);
+    color: #ff7627;
     text-align: center;
     margin: 0.3rem auto;
+    text-shadow: var(--text);
 }
 .intro strong {
     color: #009ac0;
@@ -43,6 +47,7 @@ section {
 .intro .typed-cursor {
     color: #e700ca;
     font-size: 25px;
+    text-shadow: none;
 }
 .col .hero-img {
     display: flex;
@@ -66,6 +71,10 @@ section {
     line-height: 1.8rem;
     font-weight: 500;
     /* text-shadow: var(--base-shadow); */
+    text-shadow:
+        2px 2px 3px rgb(181, 181, 181),
+        -2px 2px 2px rgb(224, 252, 255);
+    color: #535353;
 }
 .col .bottom-flex {
     top: 3.5rem;
@@ -76,21 +85,30 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
-.button-area button {
+.button-area a {
     outline: none;
     border: none;
-    display: block;
+    display: flex;
+    text-align: center;
+    align-items: center;
     font-weight: 700;
-    padding: 0.6rem 1rem;
+    padding: 0.6rem 0.5rem;
     border-radius: 10px;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 0.5rem;
+    color: var(--gray);
     background: var(--header-bg);
     box-shadow: var(--base-shadow);
+    transition: 0.3s ease-in;
+    width: 130px;
 }
-.button-area button:hover {
+.button-area a img {
+    margin: 0 0.3rem;
+}
+.button-area a:hover {
     outline: none;
+    background: transparent;
     box-shadow: var(--base-shadow-active);
     color: var(--baseDark2);
     border-color: var(--base3);

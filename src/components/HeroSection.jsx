@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ReactTyped } from "react-typed";
 import ghs from "../assets/images/ghs_1.png";
+import download from "../assets/icons/download.png"
+import rightarrow from "../assets/icons/rightarrow.png"
 
 const HeroSection = () => {
     return (
@@ -45,17 +47,32 @@ const HeroSection = () => {
                         IT.
                     </article>
                     <article>
-                    Here's my CV and contact information , Full free to contact with me , I'll response you as soon as possible.
-                    Or you can connect with me on my social media.
+                        Here's my CV and contact information , Full free to
+                        contact with me , I'll response you as soon as possible.
+                        Or you can connect with me on my social media.
                     </article>
                 </div>
                 <div className="bottom-flex">
                     <div className="button-area">
-                        <button id="see-more">See More</button>
-                        <button id="download">Download CV</button>
+                        <NavLink to="/" id="see-more">
+                            See More
+                            <img
+                                className="icon"
+                                src={rightarrow}
+                                alt="See More"
+                            />
+                        </NavLink>
+                        <NavLink to="/" id="download">
+                            Download CV
+                            <img
+                                className="icon"
+                                src={download}
+                                alt="Download CV"
+                            />
+                        </NavLink>
                     </div>
                     <div className="social">
-                    <NavLink to="/"></NavLink>
+                        <NavLink to="/"></NavLink>
                     </div>
                 </div>
             </div>

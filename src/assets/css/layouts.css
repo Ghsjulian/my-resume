@@ -14,6 +14,7 @@
     --gray: rgb(130, 131, 131);
     --orange: rgb(206, 89, 0);
     --btn-hover: rgb(14, 104, 0);
+    --text: 2px 2px 3px rgb(0, 0, 0), -2px 2px 2px rgb(224, 252, 255);
 }
 html {
     font-size: 100%;
@@ -109,11 +110,12 @@ header {
     box-shadow: var(--base-shadow);
 }
 header .logo {
-    color: var(--logo);
+    color: var(--header-bg);
     font-weight: 900;
     font-size: 1.3rem;
     text-align: center;
     margin: 0 0.2rem;
+    text-shadow: var(--text);
 }
 header .links {
     justify-content: space-between;
