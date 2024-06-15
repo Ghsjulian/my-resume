@@ -10,12 +10,13 @@
     header .links {
         display: none;
     }
-    header .nav-btn {
+    header button,.nav-btn {
         display: block;
         outline: none;
         border: none;
         background: transparent;
     }
+
     header .nav-btn i {
         color: var(--gray);
         font-size: 18px;

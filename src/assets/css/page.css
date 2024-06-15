@@ -1,32 +1,48 @@
 /* SECTION STYLING HERE */
 section {
     margin: 4.5rem 0;
+    overflow-y: auto;
 }
 .two-row {
     margin: 0.5rem 0.5rem;
 }
 .col {
     width: 100%;
-    height: auto;
-    margin: 0.5rem auto;
     background: transparent;
+    border-radius: 5px;
+}
+.col .flex {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
     padding: 0.5rem;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    /* box-shadow: var(--base-shadow);*/
-    border-radius: 5px;
+    margin: 0.5rem auto;
 }
-.col .hero-heading {
+.col .flex .hero-heading {
     color: var(--blue);
     font-weight: 900;
     text-align: center;
     margin: 0.5rem auto;
 }
-.col .intro {
-    color: var(--btn-hover);
+.col .flex .intro {
+    font-size: 1.3rem;
+    color: var(--orange);
     text-align: center;
     margin: 0.3rem auto;
+}
+.intro strong {
+    color: #009ac0;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0.2rem;
+}
+.intro .typed-cursor {
+    color: #e700ca;
+    font-size: 25px;
 }
 .col .hero-img {
     display: flex;
@@ -44,9 +60,38 @@ section {
     box-shadow: var(--base-shadow);
     border-radius: 50%;
 }
-.col article {
+.col .flex article {
+    text-transform: capitalize;
     text-align: justify;
     line-height: 1.8rem;
-    font-weight: 600;
+    font-weight: 500;
     /* text-shadow: var(--base-shadow); */
+}
+.col .bottom-flex {
+    top: 3.5rem;
+    align-items: center;
+}
+.bottom-flex .button-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.button-area button {
+    outline: none;
+    border: none;
+    display: block;
+    font-weight: 700;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    margin: 0.5rem 1rem;
+    background: var(--header-bg);
+    box-shadow: var(--base-shadow);
+}
+.button-area button:hover {
+    outline: none;
+    box-shadow: var(--base-shadow-active);
+    color: var(--baseDark2);
+    border-color: var(--base3);
 }

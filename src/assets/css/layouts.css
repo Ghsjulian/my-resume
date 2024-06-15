@@ -21,25 +21,24 @@ html {
 
 body {
     background: var(--bg);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 body {
-  --base1: #EBEFF3;
-  --base2: #C3D0DB;
-  --base3: #88A1B7;
-  --baseDark1: #396387;
-  --baseDark2: #204566;
-  --baseDark3: #152E44;
-  --base: #090E10;
-  --primary1: #FFA68B;
-  --primary2: #FF7145;
-  --primary3: #FF3D00;
-  --primaryDark1: #BA2D00;
-  --primaryDark2: #741C00;
-  --primaryDark3: #5C2511;
-  --primary: #2F0C00;
+    --base1: #ebeff3;
+    --base2: #c3d0db;
+    --base3: #88a1b7;
+    --baseDark1: #396387;
+    --baseDark2: #204566;
+    --baseDark3: #152e44;
+    --base: #090e10;
+    --primary1: #ffa68b;
+    --primary2: #ff7145;
+    --primary3: #ff3d00;
+    --primaryDark1: #ba2d00;
+    --primaryDark2: #741c00;
+    --primaryDark3: #5c2511;
+    --primary: #2f0c00;
 }
-
 
 body {
     --base-shadow: inset 0px 0px 0px var(--base3),
@@ -91,10 +90,16 @@ a {
 li {
     list-style: none;
 }
+.icon {
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
+}
 /* HEADER STYLING */
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     top: 0;
     left: 0;
@@ -106,7 +111,9 @@ header {
 header .logo {
     color: var(--logo);
     font-weight: 900;
-    font-size: 15px;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0 0.2rem;
 }
 header .links {
     justify-content: space-between;
@@ -175,7 +182,7 @@ header .mobile-menu {
 .mobile-menu #talk {
     margin: 0.5rem 0.2rem;
     text-align: center;
-    margin-top: 3.2rem;
+    margin-top: 4.2rem;
     width: 100px;
 }
 
