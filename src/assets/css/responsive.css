@@ -39,6 +39,10 @@
     }
     .header .logo {
     }
+    .hero-img .hero--img{
+        width: 500px;
+        height: 500px;
+    }
     header .links {
         display: flex;
     }

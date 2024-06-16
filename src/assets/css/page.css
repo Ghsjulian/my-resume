@@ -65,6 +65,10 @@ section {
     box-shadow: var(--base-shadow);
     border-radius: 50%;
 }
+.hero-img button {
+    display: none;
+    visibility: hidden;
+}
 .col .flex article {
     text-transform: capitalize;
     text-align: justify;

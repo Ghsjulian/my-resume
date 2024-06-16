@@ -10,17 +10,21 @@ import instagram from "../assets/icons/insta.png";
 import github from "../assets/icons/gh.png";
 import twiter from "../assets/icons/t.png";
 import google from "../assets/icons/google.png";
+import HeroSlide from "../slider/HeroSlide";
 
 const HeroSection = () => {
     return (
         <div data-aos="zoom-in" className="two-row">
             <div className="col">
-                <div className="hero-img">
-                    <img
-                        src={ghs}
-                        alt="Web Developer Ghs Julian,Ghs Julian , Programmer Ghs Julian, Web Developer And Designer Ghs Julian"
-                    />
+            <div className="hero-img">
+                <HeroSlide />
                 </div>
+                {/*
+                    <img
+                         src={ghs}
+                        alt="Web Developer Ghs Julian,Ghs Julian , Programmer Ghs Julian, Web Developer And Designer Ghs Julian"
+                     />
+                     */}
             </div>
             <div className="col">
                 <div className="flex">
