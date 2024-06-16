@@ -27,9 +27,14 @@ const HeroSlide = () => {
             autoPlay={true}
             autoPlayInterval={3000}
             width={"100%"}
+            navigation={true}
+        animationDuration={500}
+        animationType="slide"
+        speed={400}
+        easing="linear"
         >
             {images.map((image, index) => (
-                <div className="hero--img" style={{ height: "350px", width: "350px" }} key={index}>
+                <div className="hero--img" key={index}>
                     <img src={image} />
                 </div>
             ))}

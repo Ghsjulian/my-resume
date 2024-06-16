@@ -21,7 +21,10 @@
         border: none;
         background: transparent;
     }
-
+.col .hero-img .hero--img {
+        width: 350px;
+        height: 350px;
+    }
     header .nav-btn i {
         color: var(--gray);
         font-size: 18px;
@@ -39,9 +42,9 @@
     }
     .header .logo {
     }
-    .hero-img .hero--img{
-        width: 500px;
-        height: 500px;
+    .col .hero-img .hero--img {
+        width: 550px;
+        height: 550px;
     }
     header .links {
         display: flex;

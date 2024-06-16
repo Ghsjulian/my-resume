@@ -154,3 +154,6 @@ section {
     padding: 0.1px;
     object-fit: cover;
 }
+.hero-img .hero--img {
+    transition: transform .3s ease-in-out;
+}
