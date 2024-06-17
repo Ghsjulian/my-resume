@@ -3,6 +3,11 @@ section {
     margin: 4.5rem 0;
     overflow-y: auto;
 }
+section h2 {
+    color: var(--blue);
+    margin: 1rem auto;
+    text-align: center;
+}
 .two-row {
     margin: 0.5rem 0.5rem;
 }
@@ -69,7 +74,8 @@ section {
     display: none;
     visibility: hidden;
 }
-.col .flex article {
+.col .flex article,
+.col article {
     text-transform: capitalize;
     text-align: justify;
     line-height: 1.8rem;
@@ -155,5 +161,20 @@ section {
     object-fit: cover;
 }
 .hero-img .hero--img {
-    transition: transform .3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+.col .about-img {
+}
+.col .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: .5rem;
+}
+.about-img img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
 }

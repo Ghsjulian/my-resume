@@ -15,7 +15,7 @@ import HeroSlide from "../slider/HeroSlide";
 const HeroSection = () => {
     return (
         <div data-aos="zoom-in" className="two-row">
-            <div className="col">
+            <div data-aos="zoom-in" className="col">
             <div className="hero-img">
                 <HeroSlide />
                 </div>
@@ -26,7 +26,7 @@ const HeroSection = () => {
                      />
                      */}
             </div>
-            <div className="col">
+            <div data-aos="zoom-in" className="col">
                 <div className="flex">
                     <h3 className="intro">
                         <strong>I'm a</strong>

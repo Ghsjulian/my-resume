@@ -34,6 +34,11 @@
     .row {
         flex-direction: column;
     }
+    .two-grid {
+    grid-template-columns:  1fr;
+    
+}
+
 }
 @media screen and (min-width: 768px) {
     header {
@@ -71,4 +76,13 @@
     .col .social a {
         margin: 0.5rem 1rem;
     }
+    .two-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 25px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
 }
