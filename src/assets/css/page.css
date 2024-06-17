@@ -78,8 +78,9 @@ section h2 {
 .col article {
     text-transform: capitalize;
     text-align: justify;
-    line-height: 1.8rem;
+    line-height: 1.9rem;
     font-weight: 500;
+    word-spacing: 2.5px;
     /* text-shadow: var(--base-shadow); */
     text-shadow:
         2px 2px 3px rgb(181, 181, 181),
@@ -106,7 +107,7 @@ section h2 {
     font-weight: 700;
     padding: 0.6rem 0.5rem;
     border-radius: 10px;
-    margin: 0.5rem 0.3rem;
+    margin: 0.5rem auto;
     color: var(--gray);
     background: var(--header-bg);
     box-shadow: var(--base-shadow);
@@ -169,12 +170,13 @@ section h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
-    padding: .5rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.8rem;
 }
 .about-img img {
     width: 100%;
-    height: 50%;
+    height: 400px;
+    margin: 0.5rem auto;
     object-fit: cover;
     border-radius: 10px;
 }

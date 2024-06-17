@@ -3,6 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: "ghs";
+    src: url("Lato-Bold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: bold;
+}
+@font-face {
+    font-family: "popin";
+    src: url("Poppins-Medium.ttf") format("truetype");
+    font-weight: 900;
+    font-style: bold;
+}
 :root {
     --bg: #e3f6ff;
     --header-bg: #ffffff;
@@ -17,7 +29,8 @@
     --text: 2px 2px 3px rgb(0, 0, 0), -2px 2px 2px rgb(224, 252, 255);
 }
 html {
-    font-size: 100%;
+    font-size: 90%;
+    font-family: ghs, "Sans-Serif";
 }
 
 body {
