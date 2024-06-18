@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import Projects from "../components/Projects";
 
 const Home = () => {
     document.title =
@@ -13,6 +14,7 @@ const Home = () => {
         <>
             <HeroSection />
             <AboutSection />
+            <Projects />
         </>
     );
 };

@@ -34,7 +34,8 @@
     .row {
         flex-direction: column;
     }
-    .two-grid {
+    .two-grid,
+    .col .projects {
         grid-template-columns: 1fr;
     }
 }
@@ -84,5 +85,13 @@
     }
     .col .flex-center {
         margin-top: 8px;
+    }
+    .col .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+        gap: 25px;
+        margin: 1rem auto;
+        padding: 1rem;
     }
 }

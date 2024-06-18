@@ -101,14 +101,14 @@ const HeroSection = () => {
                             />
                         </NavLink>
 
-                        <NavLink to="/" id="download">
+                        <a href="/cv.pdf" download="Ghs_Julian_Resume.pdf" id="download">
                             Download CV
                             <img
                                 className="icon"
                                 src={download}
                                 alt="Download CV"
                             />
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
             </div>
