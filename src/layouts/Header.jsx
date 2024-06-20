@@ -20,6 +20,7 @@ const Header = () => {
 
     const closeMenu = () => {
         navRef.current.classList.remove("mobile-menu");
+        setisOpen(false)
     };
 
     return (

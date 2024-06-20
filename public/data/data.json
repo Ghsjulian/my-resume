@@ -1,0 +1,93 @@
+[
+    {
+        "project_id": 101001,
+        "project_name": "Social Media Website",
+        "project_img": "../images/social_media.jpg",
+        "project_url": "https://ghs.rf.gd",
+        "project_date": "18 August 2021"
+    },
+    {
+        "project_id": 101002,
+        "project_name": "Tea Selling E-Commerce Website",
+        "project_img": "../images/relax_tea.jpg",
+        "project_url": "https://ghsjulian.github.io/Relax-Tea/",
+        "project_date": "03 January 2022"
+    },
+    {
+        "project_id": 101003,
+        "project_name": "Clothes Store E Commerce Website",
+        "project_img": "../images/clothes_store.jpg",
+        "project_url":"https://ghsjulian.github.io/WEB-STORE/",
+        "project_date": "15 July 2022"
+    },
+    {
+        "project_id": 101004,
+        "project_name": "Awesome Login And Registration",
+        "project_img": "../images/awesome_desgin.jpg",
+        "project_url": "https://ghsjulian.github.io/awesome-desgin/",
+        "project_date": "18 March 2022"
+    },
+    {
+        "project_id": 101005,
+        "project_name": "Office Management Company Website",
+        "project_img": "../images/office_management.jpg",
+        "project_url": "https://ghsjulian.github.io/office-management/",
+        "project_date": "09 September 2022"
+    },
+    {
+        "project_id": 101006,
+        "project_name": "Blogs Content Writing Website",
+        "project_img": "../images/blog_website.jpg",
+        "project_url":"https://ghsjulian.github.io/__BLOG__/",
+        "project_date": "23 June 2022"
+    },
+    {
+        "project_id": 101007,
+        "project_name": "Love Calculation Entertainment Program",
+        "project_img": "../images/love_calculation.jpg",
+        "project_url": "https://ghsjulian.github.io/Love-Calculation/",
+        "project_date": "23 October 2023"
+    },
+    {
+        "project_id": 101008,
+        "project_name": "Binary Converter Educational Program",
+        "project_img": "../images/S1.jpg",
+        "project_url": "https://ghsjulian.github.io/Binary-Converter/",
+        "project_date": "26 August 2023"
+    },
+    {
+        "project_id": 101009,
+        "project_name": "Siri Voice Assistant Program",
+        "project_img": "../images/siri_voice_assistant.jpg",
+        "project_url":"https://ghsjulian.github.io/SIRI_1.01_Vesion/",
+        "project_date": "13 July 2022"
+    },
+    {
+        "project_id": 1010010,
+        "project_name": "To-Do List App Using Javascript",
+        "project_img": "../images/todo_list.jpg",
+        "project_url":"https://ghsjulian.github.io/To-Do-List/",
+        "project_date": "19 March 2023"
+    },
+    {
+        "project_id": 1010011,
+        "project_name": "My Awesome Portfolio",
+        "project_img": "../images/ghs_portfolio.jpg",
+        "project_url": "https://ghsjulian.github.io/Official-Portfolio/",
+        "project_date": "07 July 2023"
+    },
+    {
+        "project_id": 1010012,
+        "project_name": "CMS Admin Dashboard Template",
+        "project_img": "../images/admin_cms.jpg",
+        "project_url": "https://ghsjulian.github.io/cms-admin-dashboard/",
+        "project_date": "24 July 2023"
+    },
+    {
+        "project_id": 1010013,
+        "project_name": "Analog Clock Using Javascript",
+        "project_img": "../images/analog_clock.jpg",
+        "project_url": "https://ghsjulian.github.io/Analog-Clock/",
+        "project_date": "22 February 2022"
+    }
+]
