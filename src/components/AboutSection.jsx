@@ -5,7 +5,7 @@ const AboutSection = () => {
     return (
         <>
             <h2>About Me </h2>
-            <div data-aos="zoom-in" className="two-grid">
+            <div id="about" data-aos="zoom-in" className="two-grid">
                 <div data-aos="zoom-in" className="col">
                     <div className="about-img">
                         <img src={programmer} />

@@ -180,3 +180,18 @@ section h2 {
     object-fit: cover;
     border-radius: 10px;
 }
+.projects .col {
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0.5rem auto;
+}
+.projects .col img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: .3rem;
+}

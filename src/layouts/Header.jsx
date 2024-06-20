@@ -18,18 +18,25 @@ const Header = () => {
         setisOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        navRef.current.classList.remove("mobile-menu");
+    };
+
     return (
         <header>
             <div className="logo">Ghs Julian</div>
             <div ref={navRef} className="links">
                 <h3>Menu</h3>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/">About</NavLink>
-                <NavLink to="/">Contact</NavLink>
-                <NavLink to="/">Services</NavLink>
-                <NavLink to="/">Projects</NavLink>
-                <NavLink id="talk" to="/">
-                   <img src={call} alt="Talk Now"/> Let's Talk
+                <NavLink onClick={closeMenu} to="/">
+                    Home
+                </NavLink>
+                <a onClick={closeMenu} href="#about">About</a>
+                <NavLink onClick={closeMenu} to="https://web.facebook.com/ghs.julian.85">
+                    Contact
+                </NavLink>
+                <a onClick={closeMenu} href="#projects">Projects</a>
+                <NavLink onClick={closeMenu} id="talk" to="https://web.facebook.com/ghs.julian.85">
+                    <img src={call} alt="Talk Now" /> Let's Talk
                 </NavLink>
             </div>
             <div onClick={openNav} className="nav-btn">

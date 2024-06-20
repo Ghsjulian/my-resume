@@ -64,30 +64,30 @@ const HeroSection = () => {
                 </div>
                 <div className="bottom-flex">
                     <div className="social">
-                        <NavLink to="/" id="download">
+                        <NavLink to="https://web.facebook.com/ghs.julian.85" target="_blank" id="download">
                             <img
                                 className="icon"
                                 src={facebook}
                                 alt="Facebook"
                             />
                         </NavLink>
-                        <NavLink to="/" id="download">
+                        <NavLink target="_blank" to="https://youtube.com/Ghsjulian" id="download">
                             <img className="icon" src={youtube} alt="YouTube" />
                         </NavLink>
-                        <NavLink to="/" id="download">
+                        <NavLink target="_blank" to="https://google.com/search?q=Ghs Julian" id="download">
                             <img className="icon" src={google} alt="Google" />
                         </NavLink>
-                        <NavLink to="/" id="download">
+                        <NavLink target="_blank" to="https://twitter.com/Ghsjulian" id="download">
                             <img className="icon" src={twiter} alt="Twiter" />
                         </NavLink>
-                        <NavLink to="/" id="download">
+                        <NavLink target="_blank" to="/" id="download">
                             <img
                                 className="icon"
                                 src={instagram}
                                 alt="Instagram"
                             />
                         </NavLink>
-                        <NavLink to="/" id="download">
+                        <NavLink target="_blank" to="https://guthub.com/Ghsjulian" id="download">
                             <img className="icon" src={github} alt="GitHub" />
                         </NavLink>
                     </div>
