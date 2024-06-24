@@ -1,55 +1,88 @@
 import React, { useRef, useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import menu from "../assets/icons/menu.png";
-import close from "../assets/icons/close.png";
-import call from "../assets/icons/call.png";
+import ghs from "../assets/img/ghs_10.png";
 
 const Header = () => {
-    const navigate = useNavigate();
-    const location = useLocation();
-    const [path, setPath] = useState("");
+    const headerRef = useRef(null);
     const [isOpen, setisOpen] = useState(false);
-    useEffect(() => {
-        setPath(location.pathname);
-    }, [location]);
-    const navRef = useRef(null);
-    const openNav = () => {
-        navRef.current.classList.toggle("mobile-menu");
+    const openHeader = () => {
+        headerRef.current.classList.toggle("show-header");
         setisOpen(!isOpen);
     };
-
-    const closeMenu = () => {
-        navRef.current.classList.remove("mobile-menu");
-        setisOpen(false)
-    };
-
     return (
-        <header>
-            <div className="logo">Ghs Julian</div>
-            <div ref={navRef} className="links">
-                <h3>Menu</h3>
-                <NavLink onClick={closeMenu} to="/">
-                    Home
-                </NavLink>
-                <a onClick={closeMenu} href="#about">About</a>
-                <NavLink onClick={closeMenu} to="https://web.facebook.com/ghs.julian.85">
-                    Contact
-                </NavLink>
-                <a onClick={closeMenu} href="#projects">Projects</a>
-                <NavLink onClick={closeMenu} id="talk" to="https://web.facebook.com/ghs.julian.85">
-                    <img src={call} alt="Talk Now" /> Let's Talk
-                </NavLink>
-            </div>
-            <div onClick={openNav} className="nav-btn">
-                <button>
-                    <img
-                        className="icon"
-                        src={isOpen ? close : menu}
-                        alt="Menu Bar"
-                    />
+        <>
+            <header ref={headerRef} className="header">
+                <img
+                    src={ghs}
+                    alt="Ghs Julian Web Developer | Web Designer Ghs Julian | Programmer"
+                />
+                <h3 className="name">Ghs Julian</h3>
+                <h4>Web Developer & Desginer</h4>
+                <div className="social-links">
+                    <NavLink to="#" className="twitter">
+                        <i className="bx bxl-twitter"></i>
+                    </NavLink>
+                    <NavLink to="#" className="facebook">
+                        <i className="bx bxl-facebook-circle"></i>
+                    </NavLink>
+                    <NavLink to="#" className="facebook">
+                        <i className="bx bxl-youtube"></i>
+                    </NavLink>
+                    <NavLink to="#" className="instagram">
+                        <i className="bx bxl-instagram-alt"></i>
+                    </NavLink>
+                    <NavLink to="#" className="google-plus">
+                        <i className="bx bxl-google"></i>
+                    </NavLink>
+                    <NavLink to="#" className="linkedin">
+                        <i className="bx bxl-github"></i>
+                    </NavLink>
+                </div>
+                <div className="nav-menu">
+                    <ul>
+                        <li>
+                            <NavLink to="/" className="active">
+                                <i className="bx bx-home"></i>Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/about">
+                                <i className="bx bx-user-circle"></i> About
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/resume">
+                                <i className="ri ri-building-line"></i> Resume
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/portfolio">
+                                <i className="ri ri-tools-fill"></i> Portfolio
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/services">
+                                <i className="ri ri-server-line"></i> Services
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/contact">
+                                <i className="bx  bxl-whatsapp"></i> Contact
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <nav className="top-bar">
+                <h3>Ghs Julian</h3>
+                <button onClick={openHeader}>
+                    <i className={`bx bx-${isOpen ? "x" : "menu"}`}></i>
                 </button>
-            </div>
-        </header>
+                <NavLink to="/contact">
+                    <i className="bx bxl-whatsapp"></i>Contact
+                </NavLink>
+            </nav>
+        </>
     );
 };
 

@@ -1,36 +1,53 @@
 import React from "react";
-import programmer from "../assets/icons/programmer.png";
+import ghs from "../assets/img/ghs_10.png";
 
 const AboutSection = () => {
     return (
-        <>
-            <h2>About Me </h2>
-            <div id="about" data-aos="zoom-in" className="two-grid">
-                <div data-aos="zoom-in" className="col">
-                    <div className="about-img">
-                        <img src={programmer} />
-                    </div>
-                </div>
-                <div data-aos="zoom-in" className="col">
-                    <div className="flex-center">
-                        <article>
-                            I'm Julie ! I am a web developer and designer. As
-                            I'm a developer i am also a student of university. I
-                            am doing a graduation in English literature. I live
-                            with my parents in a small village of Bangladesh. My
-                            biggest dream is being a best computer programmer.
-                            I am a simple boy . And i have a Lot's of dream. I
-                            wanna fulfill them and that's why i am busy to make
-                            myself perfect. when i will be a programmer,,, I'll
-                            know that my dream has succeed. I like coding so
-                            much . I am 21 Years old. For more information you
-                            can contact me or follow me on my social media.
-                        </article>
-                    </div>
-                </div>
+          <section id="about" className="about section">
+      <div className="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+      </div>
+
+      <div className="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div className="row gy-4 justify-content-center">
+          <div className="col-lg-4">
+            <img src={ghs} className="img-fluid" alt=""/>
+          </div>
+          <div className="col-lg-8 content">
+            <h2>UI/UX Designer &amp; Web Developer.</h2>
+            <p className="fst-italic py-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <div className="row">
+              <div className="col-lg-6">
+                <ul>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                </ul>
+              </div>
+              <div className="col-lg-6">
+                <ul>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
             </div>
-        </>
-    );
+            <p className="py-3">
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    )
 };
 
 export default AboutSection;
