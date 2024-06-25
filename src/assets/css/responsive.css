@@ -47,4 +47,11 @@
         left: 0;
         width: 100%;
     }
+    section #heading {
+        width: 60%;
+    }
+    .two-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }

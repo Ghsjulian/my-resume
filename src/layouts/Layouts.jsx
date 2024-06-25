@@ -14,6 +14,9 @@ import "../assets/vendor/boxicons/css/boxicons.min.css";
 import "../assets/vendor/remixicon/remixicon.css";
 
 const Layouts = ({ children }) => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" }), [];
+    });
     return (
         <>
             <Header />

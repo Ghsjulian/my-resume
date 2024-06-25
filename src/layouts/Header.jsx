@@ -9,6 +9,15 @@ const Header = () => {
         headerRef.current.classList.toggle("show-header");
         setisOpen(!isOpen);
     };
+    const closeHeader = () => {
+        headerRef.current.classList.remove("show-header");
+        setisOpen(!isOpen);
+    };
+    const location = useLocation();
+    const [path, setPath] = useState("");
+    useEffect(() => {
+        setPath(location.pathname);
+    }, [location]);
     return (
         <>
             <header ref={headerRef} className="header">
@@ -41,32 +50,56 @@ const Header = () => {
                 <div className="nav-menu">
                     <ul>
                         <li>
-                            <NavLink to="/" className="active">
+                            <NavLink
+                                onClick={closeHeader}
+                                to="/"
+                                className={path == "/" ? "active" : ""}
+                            >
                                 <i className="bx bx-home"></i>Home
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/about">
+                            <NavLink
+                                onClick={closeHeader}
+                                to="/about"
+                                className={path == "/about" ? "active" : ""}
+                            >
                                 <i className="bx bx-user-circle"></i> About
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/resume">
+                            <NavLink
+                                onClick={closeHeader}
+                                to="/resume"
+                                className={path == "/resume" ? "active" : ""}
+                            >
                                 <i className="ri ri-building-line"></i> Resume
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/portfolio">
+                            <NavLink
+                                onClick={closeHeader}
+                                to="/portfolio"
+                                className={path == "/portfolio" ? "active" : ""}
+                            >
                                 <i className="ri ri-tools-fill"></i> Portfolio
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/services">
+                            <NavLink
+                                onClick={closeHeader}
+                                to="/services"
+                                className={path == "/services" ? "active" : ""}
+                            >
                                 <i className="ri ri-server-line"></i> Services
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/contact">
+                            <NavLink
+                                onClick={closeHeader}
+                                to="/contact"
+                                className={path == "/contact" ? "active" : ""}
+                            >
                                 <i className="bx  bxl-whatsapp"></i> Contact
                             </NavLink>
                         </li>

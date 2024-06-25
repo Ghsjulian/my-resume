@@ -4,7 +4,7 @@ import { ReactTyped } from "react-typed";
 import ghs from "../assets/img/ghs_10.png";
 
 const HeroSection = () => {
-    return (
+        return (
         <section id="hero" className="hero section">
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <p>
@@ -27,14 +27,23 @@ const HeroSection = () => {
                             "SEO Expert",
                             "Ethical Programmer"
                         ]}
+                        cursorChar="|"
                         typeSpeed={70} // Adjust typing speed here (milliseconds)
                         backSpeed={60} // Adjust backspace speed (milliseconds)
                         loop // Set to loop through the strings continuously
                     />
                 </h3>
                 <div className="btn-area">
-                <a id="see-more" href="#">See More</a>
-                <a id="download" href="#">Download CV</a>
+                    <a id="see-more" href="#about">
+                        See More
+                    </a>
+                    <a
+                        id="download"
+                        href="/cv.pdf"
+                        download="Ghs_Julian_CV.pdf"
+                    >
+                        Download CV
+                    </a>
                 </div>
             </div>
         </section>

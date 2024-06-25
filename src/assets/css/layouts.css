@@ -1,13 +1,30 @@
+@font-face {
+    font-family: "poppin-bold";
+    src: url("fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: "poppin-thin";
+    src: url("fonts/Poppins-Light.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face {
+    font-family: "ghs";
+    src: url("fonts/Lato-Bold.ttf") format("truetype");
+    font-weight: 900;
+    font-style: bold;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-}
 html {
     scroll-behavior: smooth;
     font-size: 95%;
+    font-family: poppin-bold, "Sans-Serif";
     --bg: #000000;
     --header: #00242d;
     --nav: #001923;
@@ -38,7 +55,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: sans-serif;
+    font-family: ghs;
 }
 
 /*--------------------------------------------------------------
@@ -167,7 +184,7 @@ nav,
 }
 
 main {
-    padding-top: 4.8rem;
+    padding-top: 4rem;
     position: relative;
     left: 25%;
     width: calc(100% - 25%);
@@ -197,7 +214,7 @@ section,
     text-align: center;
     color: #ffffff;
     font-weight: 500;
-    text-shadow: 1px 1px 2px #808080;
+    text-shadow: 1px 1px 2px #505050;
     font-size: 18px;
     line-height: 1.8rem;
     text-transform: capitalize;
@@ -208,10 +225,18 @@ section,
     color: #ffffff;
     margin: 0.3rem auto;
     text-align: center;
-    text-shadow: 2px 1px 3px #00b1c6;
+    text-shadow: 2px 1px 2px #00b1c6;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
+
+.container .typed-cursor {
+    color: #fb0aff;
+    text-shadow: none;
+    font-weight: 700;
+    font-size: 35px;
+}
+
 .container .btn-area {
     display: flex;
     justify-content: center;
@@ -224,6 +249,7 @@ section,
     text-decoration: none;
     border-radius: 12px;
     padding: 0.5rem 1rem;
+    transition: 0.3s ease-in;
 }
 .btn-area #see-more {
     background: #005e58;
@@ -234,6 +260,14 @@ section,
     background: #0047ce;
     color: #fff;
     font-weight: 500;
+}
+.btn-area #see-more:hover {
+    background: transparent;
+    border: 1.5px solid #005e58;
+}
+.btn-area #download:hover {
+    background: transparent;
+    border: 1.5px solid #0047ce;
 }
 footer,
 .footer {
@@ -260,7 +294,40 @@ footer,
     color: #ffde11;
     font-weight: 700;
 }
-
+section #heading {
+    text-align: center;
+    align-items: center;
+    margin: 0.5rem auto;
+    width: 30%;
+    border-bottom: 2px solid #00b9cb;
+}
+.two-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));
+    gap: 10px;
+    margin: 1rem auto;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+}
+.two-row .col #user {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0.8;
+    border-radius: 18px;
+}
+.two-row .col article {
+    padding: 0.5rem 0;
+    margin: 0.5rem auto;
+    text-align: justify;
+    line-height: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: ghs;
+    word-spacing: 2.2px;
+}
 /* Animation Created */
 @keyframes left-animation {
     from {
