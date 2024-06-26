@@ -3,17 +3,17 @@ import ghs from "../assets/img/bg_2.png";
 
 const AboutSection = () => {
     return (
-        <section id="about" className="about">
+        <section data-aos="zoom-in" id="about" className="about">
             <h2 id="heading">About Me</h2>
             <div className="two-row">
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                     <img
                         id="user"
                         src={ghs}
                         alt="Ghs Julian Web Developer Designer"
                     />
                 </div>
-                <div className="col">
+                <div data-aos="zoom-in" className="col">
                 <article>
                  I am Ghs Julian a professional web developer and designer.
                  I am a student department of English. I am doing a graduation in English. 

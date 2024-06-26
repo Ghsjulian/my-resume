@@ -20,14 +20,16 @@ const Header = () => {
     }, [location]);
     return (
         <>
-            <header ref={headerRef} className="header">
+            <header ref={headerRef} className="header" data-aos="zoom-in">
                 <img
                     src={ghs}
                     alt="Ghs Julian Web Developer | Web Designer Ghs Julian | Programmer"
                 />
-                <h3 className="name">Ghs Julian</h3>
-                <h4>Web Developer & Desginer</h4>
-                <div className="social-links">
+                <h3 className="name" data-aos="zoom-in">
+                    Ghs Julian
+                </h3>
+                <h4 data-aos="zoom-in">Web Developer & Desginer</h4>
+                <div className="social-links" data-aos="zoom-in">
                     <NavLink to="#" className="twitter">
                         <i className="bx bxl-twitter"></i>
                     </NavLink>
@@ -47,7 +49,7 @@ const Header = () => {
                         <i className="bx bxl-github"></i>
                     </NavLink>
                 </div>
-                <div className="nav-menu">
+                <div className="nav-menu" data-aos="zoom-in">
                     <ul>
                         <li>
                             <NavLink
@@ -73,7 +75,7 @@ const Header = () => {
                                 to="/projects"
                                 className={path == "/projects" ? "active" : ""}
                             >
-                                <i className="ri ri-building-line"></i> Resume
+                                <i className="ri ri-building-line"></i> Latest Projects 
                             </NavLink>
                         </li>
                         <li>
