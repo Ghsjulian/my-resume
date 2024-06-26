@@ -70,8 +70,8 @@ const Header = () => {
                         <li>
                             <NavLink
                                 onClick={closeHeader}
-                                to="/resume"
-                                className={path == "/resume" ? "active" : ""}
+                                to="/projects"
+                                className={path == "/projects" ? "active" : ""}
                             >
                                 <i className="ri ri-building-line"></i> Resume
                             </NavLink>

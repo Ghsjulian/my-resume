@@ -48,10 +48,13 @@
         width: 100%;
     }
     section #heading {
-        width: 60%;
+        width: 70%;
     }
     .two-row {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+    }
+    .grid-row .col img {
+       width: 320px; 
     }
 }

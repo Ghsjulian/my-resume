@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import programmer from "../assets/icons/project.svg";
+import ghs from "../assets/img/ghs_10.png";
 
 const Projects = () => {
     /*  document.title =
@@ -19,7 +19,37 @@ const Projects = () => {
                 }
             });
     }, []);
+    return (
+        <section id="projects" className="projects">
+            <h2 id="heading">My Latest Projects</h2>
+            <div className="grid-row">
+                {Projects_Data.map(project => {
+                    return (
+                        <div data-aos="zoom-in" className="col" key={project.project_id}>
+                            <img src={project.project_img} alt="Ghs Julian - Projects" />
+                            <h3 className="title"> {project.project_name}</h3>
+                            <NavLink 
+                                    to={project.project_url}
+                                    target="_blank">
+                                View Demo
+                            </NavLink>
+                        </div>
+                    );
+                })}
+                {/*
+                <div className="col">
+                    <img src={ghs} alt="Ghs Julian - Projects" />
+                    <h3 className="title"> Awesome E Commerce</h3>
+                    <NavLink to="/" target="_blank">
+                        View Demo{" "}
+                    </NavLink>
+                </div>
+                */}
+            </div>
+        </section>
+    );
 
+    /*
     return (
         <>
             <h2>My Projects</h2>
@@ -43,7 +73,7 @@ const Projects = () => {
                             </div>
                         );
                     })}
-                    {/*
+                    
                         <div className="col">
                             <img src={programmer} alt="Projects" />
                             <h3>Responsive Landing Page</h3>
@@ -65,9 +95,9 @@ const Projects = () => {
                                 View Demo{" "}
                             </NavLink>
                         </div>
-                        */}
+                        
                 </div>
-                {/*
+               
                 <div data-aos="zoom-in" className="col">
                     <div className="about-img">
                         <img src={programmer} />
@@ -83,10 +113,11 @@ const Projects = () => {
                         </article>
                     </div>
                 </div>
-                */}
+                
             </div>
         </>
     );
+    */
 };
 
 export default Projects;

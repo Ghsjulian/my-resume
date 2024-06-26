@@ -1,6 +1,7 @@
 import Layouts from "./layouts/Layouts";
 import Home from "./pages/Home";
 import About from "./components/AboutSection"
+import Projects from "./components/Projects"
 
 const MyRoutes = [
     {
@@ -14,10 +15,17 @@ const MyRoutes = [
     },
     {
         path: "/about",
-        index: true,
         element: (
             <Layouts>
                 <About />
+            </Layouts>
+        )
+    },
+    {
+        path: "/projects",
+        element: (
+            <Layouts>
+               <Projects />
             </Layouts>
         )
     },
