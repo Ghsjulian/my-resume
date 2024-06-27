@@ -2,7 +2,10 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ghs from "../assets/img/ghs_10.png";
 
-const Skills = () => {
+const Skills = ({isTrue}) => {
+    if(isTrue){
+        document.title = "See My Skills And Experience | Know About And What I Can Do"
+    }
     const [ProjectsData, setProject] = useState([]);
     const [loading, setLoading] = useState(false);
     const url = "./data/icons.json";

@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import ghs from "../assets/img/ghs_10.png";
 
-const Projects = () => {
+const Projects = ({isTrue}) => {
+     if(isTrue){
      document.title =
         "See My Latest Projects | My All Projects Are Included Here | Web Developer Ghs Julian";
-        
+     } 
     const [loading, setLoading] = useState(false);
     const [Projects_Data, setProject_Data] = useState([]);
     const url = "./data/data.json";

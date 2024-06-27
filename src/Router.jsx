@@ -1,11 +1,10 @@
 import Layouts from "./layouts/Layouts";
 import Home from "./pages/Home";
-import About from "./components/AboutSection"
-import Projects from "./components/Projects"
-import Skills from "./components/Skills"
-import Contact from "./components/Contact"
-import NotFound from "./components/404"
-
+import About from "./components/AboutSection";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Contact from "./components/Contact";
+import NotFound from "./components/404";
 
 const MyRoutes = [
     {
@@ -21,7 +20,7 @@ const MyRoutes = [
         path: "/about",
         element: (
             <Layouts>
-                <About />
+                <About isTrue={true} />
             </Layouts>
         )
     },
@@ -29,7 +28,7 @@ const MyRoutes = [
         path: "/contact",
         element: (
             <Layouts>
-                <Contact />
+                <Contact isTrue={true} />
             </Layouts>
         )
     },
@@ -37,7 +36,7 @@ const MyRoutes = [
         path: "/skills",
         element: (
             <Layouts>
-               <Skills />
+                <Skills isTrue={true} />
             </Layouts>
         )
     },
@@ -45,13 +44,13 @@ const MyRoutes = [
         path: "/projects",
         element: (
             <Layouts>
-               <Projects />
+                <Projects isTrue={true} />
             </Layouts>
         )
     },
     {
         path: "*",
-        element: <NotFound/>
+        element: <NotFound />
     }
 ];
 

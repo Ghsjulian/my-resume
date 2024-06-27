@@ -35,14 +35,14 @@ const HeroSection = () => {
                 </h3>
                 <div data-aos="zoom-in" className="btn-area">
                     <a id="see-more" href="#about">
-                        See More
+                        See More <i className="bx bx-right-arrow-alt"></i>
                     </a>
                     <a
                         id="download"
                         href="/cv.pdf"
                         download="Ghs_Julian_CV.pdf"
                     >
-                        Download CV
+                        Download CV <i className="bx bxs-download"></i>
                     </a>
                 </div>
             </div>

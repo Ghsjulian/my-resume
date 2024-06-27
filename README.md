@@ -1,7 +1,7 @@
 <center>
 
 <center>
-<img align="center" src="src/assets/images/ghs_1.png" width="250" height="250"><br>
+<img align="center" src="src/assets/img/ghs_10.png" width="250" height="250"><br>
 <h2 align="center">Ghs Julian</h2>
 </center>
 
@@ -16,9 +16,7 @@
 
 ---
 
-**This is a static Bak-Agency Demo created by Ghs Julian
- I'll implement the react single page feture after the UI completely deigned. The website will be a dynamic with admin dashboard. After making this I'll add more advance features ! but right now it's
- enough , no worry's.**
+**This Is My Favorite Resume And Portfolio**
 
 ---
 
@@ -43,6 +41,8 @@
 3. JAVASCRIPT
 4. PNG/IMAGES
 5. ANIMATIONS 
+6. REACT
+7. JSON
 
 ---
 

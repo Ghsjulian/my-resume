@@ -1,7 +1,10 @@
 import React from "react";
 import ghs from "../assets/img/bg_2.png";
 
-const AboutSection = () => {
+const AboutSection = ({isTrue}) => {
+   if(isTrue){
+      document.title = "About Ghs Julian | Read And Know More About Myself" 
+   }
     return (
         <section data-aos="zoom-in" id="about" className="about">
             <h2 id="heading">About Me</h2>

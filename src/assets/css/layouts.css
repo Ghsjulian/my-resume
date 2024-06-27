@@ -248,8 +248,11 @@ section,
     margin: 0.3rem 1.5rem;
     text-decoration: none;
     border-radius: 12px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem .7rem;
     transition: 0.3s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn-area #see-more {
     background: #005e58;
@@ -485,6 +488,18 @@ section .skill-row {
 }
 .form button:hover {
     background: #00c134;
+}
+#contact h3 {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    margin: 0.5rem;
+}
+#contact h3 i {
+    color: #03f5ff;
+    font-size: 19px;
+    margin: 0.5rem 0.5rem;
+    padding: 0.3rem 0;
 }
 
 /* Animation Created */

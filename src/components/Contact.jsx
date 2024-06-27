@@ -1,10 +1,16 @@
 import React from "react";
 import ghs from "../assets/img/bg_3.png";
 
-const Contact = () => {
+const Contact = ({ isTrue }) => {
+    if(isTrue){
+    document.title =
+        "Contact With Me - If You want to hire me you can contact me here";
+    }
     return (
         <section data-aos="zoom-in" id="contact" className="contact">
-            <h2 data-aos="zoom-in" id="heading">Contact With Me</h2>
+            <h2 data-aos="zoom-in" id="heading">
+                Contact With Me
+            </h2>
             <article data-aos="zoom-in">
                 Full Free to contact with me , as soon as possible I'll response
                 you. here's the contact form it's a demo only . if you really
@@ -13,12 +19,20 @@ const Contact = () => {
                 here.
             </article>
             <div className="two-row">
-                <div data-aos="zoom-in" className="col">
-                    <img data-aos="zoom-in"
+                <div id="contact" data-aos="zoom-in" className="col">
+                    <img
+                        data-aos="zoom-in"
                         id="user"
                         src={ghs}
                         alt="Ghs Julian Web Developer Designer"
                     />
+                    <h3>
+                        <i className="bx bx-message-rounded"></i> Email :
+                        info.ghs85@gmail.com
+                    </h3>
+                    <h3>
+                        <i className="bx bx-phone-call"></i>Phone : 01302661227
+                    </h3>
                 </div>
                 <div data-aos="zoom-in" className="col">
                     <div className="form">

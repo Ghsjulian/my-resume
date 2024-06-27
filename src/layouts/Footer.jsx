@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer data-aos="zoom-in" className="footer">
+        <footer className="footer">
             <p>
                 © <span>Copyright</span>
                 
