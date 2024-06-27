@@ -6,45 +6,55 @@ const Projects = () => {
     /*  document.title =
         "See My Latest Projects | My All Projects Are Included Here";
         */
+    const [loading, setLoading] = useState(false);
     const [Projects_Data, setProject_Data] = useState([]);
     const url = "./data/data.json";
+    const fetchData = async url => {
+        try {
+            setLoading(true);
+            const response = await fetch(url);
+            const data = await response.json();
+            if (data) {
+                setProject_Data(data);
+            }
+        } catch (error) {
+            console.error(error);
+        } finally {
+            setLoading(false);
+        }
+    };
     useEffect(() => {
-        fetch(url)
-            .then(res => {
-                return res.json();
-            })
-            .then(data => {
-                if (data) {
-                    setProject_Data(data);
-                }
-            });
+        fetchData(url);
     }, []);
     return (
         <section data-aos="zoom-in" id="projects" className="projects">
-            <h2 data-aos="zoom-in" id="heading">My Latest Projects</h2>
+            <h2 data-aos="zoom-in" id="heading">
+                My Latest Projects
+            </h2>
             <div className="grid-row">
+               {loading && (
+                    <div className="loader">
+                        <h2>Loading...</h2>
+                    </div>
+                )}
                 {Projects_Data.map(project => {
                     return (
-                        <div data-aos="zoom-in" className="col" key={project.project_id}>
-                            <img src={project.project_img} alt="Ghs Julian - Projects" />
+                        <div
+                            data-aos="zoom-in"
+                            className="col"
+                            key={project.project_id}
+                        >
+                            <img
+                                src={project.project_img}
+                                alt="Ghs Julian - Projects"
+                            />
                             <h3 className="title"> {project.project_name}</h3>
-                            <NavLink 
-                                    to={project.project_url}
-                                    target="_blank">
+                            <NavLink to={project.project_url} target="_blank">
                                 View Demo
                             </NavLink>
                         </div>
                     );
                 })}
-                {/*
-                <div className="col">
-                    <img src={ghs} alt="Ghs Julian - Projects" />
-                    <h3 className="title"> Awesome E Commerce</h3>
-                    <NavLink to="/" target="_blank">
-                        View Demo{" "}
-                    </NavLink>
-                </div>
-                */}
             </div>
         </section>
     );

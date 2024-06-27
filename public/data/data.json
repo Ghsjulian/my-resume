@@ -82,12 +82,4 @@
         "project_img": "../images/admin_cms.jpg",
         "project_url": "https://ghsjulian.github.io/cms-admin-dashboard/",
         "project_date": "24 July 2023"
-    },
-    {
-        "project_id": 1010013,
-        "project_name": "Analog Clock Using Javascript",
-        "project_img": "../images/analog_clock.jpg",
-        "project_url": "https://ghsjulian.github.io/Analog-Clock/",
-        "project_date": "22 February 2022"
-    }
-]
+    }]

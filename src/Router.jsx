@@ -2,6 +2,7 @@ import Layouts from "./layouts/Layouts";
 import Home from "./pages/Home";
 import About from "./components/AboutSection"
 import Projects from "./components/Projects"
+import Skills from "./components/Skills"
 
 const MyRoutes = [
     {
@@ -18,6 +19,14 @@ const MyRoutes = [
         element: (
             <Layouts>
                 <About />
+            </Layouts>
+        )
+    },
+    {
+        path: "/skills",
+        element: (
+            <Layouts>
+               <Skills />
             </Layouts>
         )
     },

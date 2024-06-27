@@ -81,10 +81,10 @@ const Header = () => {
                         <li>
                             <NavLink
                                 onClick={closeHeader}
-                                to="/portfolio"
-                                className={path == "/portfolio" ? "active" : ""}
+                                to="/skills"
+                                className={path == "/skills" ? "active" : ""}
                             >
-                                <i className="ri ri-tools-fill"></i> Portfolio
+                                <i className="ri ri-tools-fill"></i> My Skills
                             </NavLink>
                         </li>
                         <li>
