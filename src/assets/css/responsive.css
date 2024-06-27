@@ -39,9 +39,12 @@
         left: 0;
         width: 100%;
     }
-    .container p {
+    .container p,
+    #skills article,#projects article,#contact article {
         max-width: 100%;
+        text-align: justify;
         margin: 0.5rem auto;
+        padding: .3rem .5rem;
     }
     .footer {
         left: 0;
@@ -55,6 +58,6 @@
         grid-template-rows: auto;
     }
     .grid-row .col img {
-       width: 320px; 
+        width: 320px;
     }
 }

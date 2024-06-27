@@ -29,6 +29,11 @@ const Skills = () => {
             <h2 data-aos="zoom-in" id="heading">
                 My All Skills
             </h2>
+             <article>
+                Here's my all skills and experience. As a Full-Stack Web Developer i have theses languages and technologies.
+                i have achieved theses all technologies from internet with self learning and i have made so many projects using 
+                this popular technologies. Some skills are still required But I'll complete it very soon.
+            </article>
             <div data-aos="zoom-in" className="skill-row">
                 {loading && (
                     <div className="loader">

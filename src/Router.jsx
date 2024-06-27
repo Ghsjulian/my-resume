@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import About from "./components/AboutSection"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
+import Contact from "./components/Contact"
+import NotFound from "./components/404"
+
 
 const MyRoutes = [
     {
@@ -19,6 +22,14 @@ const MyRoutes = [
         element: (
             <Layouts>
                 <About />
+            </Layouts>
+        )
+    },
+    {
+        path: "/contact",
+        element: (
+            <Layouts>
+                <Contact />
             </Layouts>
         )
     },
@@ -40,11 +51,7 @@ const MyRoutes = [
     },
     {
         path: "*",
-        element: (
-            <Layouts>
-                <h2>Not Found</h2>
-            </Layouts>
-        )
+        element: <NotFound/>
     }
 ];
 

@@ -30,22 +30,22 @@ const Header = () => {
                 </h3>
                 <h4 data-aos="zoom-in">Web Developer & Desginer</h4>
                 <div className="social-links" data-aos="zoom-in">
-                    <NavLink to="#" className="twitter">
+                    <NavLink to="https://m.twitter.com/Ghsjulian" target="_blank" className="twitter">
                         <i className="bx bxl-twitter"></i>
                     </NavLink>
-                    <NavLink to="#" className="facebook">
+                    <NavLink to="https://web.facebook.com/ghs.julian.85" target="_blank" className="facebook">
                         <i className="bx bxl-facebook-circle"></i>
                     </NavLink>
-                    <NavLink to="#" className="facebook">
+                    <NavLink to="https://m.youtube.com/Ghsjulian" target="_blank" className="facebook">
                         <i className="bx bxl-youtube"></i>
                     </NavLink>
-                    <NavLink to="#" className="instagram">
+                    <NavLink to="https://www.instagram.com/ghs.julian.85/" target="_blank" className="instagram">
                         <i className="bx bxl-instagram-alt"></i>
                     </NavLink>
-                    <NavLink to="#" className="google-plus">
+                    <NavLink  to="https://google.com/search?q=Ghs+Julian" target="_blank" className="google-plus">
                         <i className="bx bxl-google"></i>
                     </NavLink>
-                    <NavLink to="#" className="linkedin">
+                    <NavLink to="https://github.com/Ghsjulian" target="_blank" className="linkedin">
                         <i className="bx bxl-github"></i>
                     </NavLink>
                 </div>
@@ -63,10 +63,10 @@ const Header = () => {
                         <li>
                             <NavLink
                                 onClick={closeHeader}
-                                to="/about"
-                                className={path == "/about" ? "active" : ""}
+                                to="/skills"
+                                className={path == "/skills" ? "active" : ""}
                             >
-                                <i className="bx bx-user-circle"></i> About
+                                <i className="ri ri-tools-fill"></i> My Skills
                             </NavLink>
                         </li>
                         <li>
@@ -78,22 +78,13 @@ const Header = () => {
                                 <i className="ri ri-building-line"></i> Latest Projects 
                             </NavLink>
                         </li>
-                        <li>
+                       <li>
                             <NavLink
                                 onClick={closeHeader}
-                                to="/skills"
-                                className={path == "/skills" ? "active" : ""}
+                                to="/about"
+                                className={path == "/about" ? "active" : ""}
                             >
-                                <i className="ri ri-tools-fill"></i> My Skills
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink
-                                onClick={closeHeader}
-                                to="/services"
-                                className={path == "/services" ? "active" : ""}
-                            >
-                                <i className="ri ri-server-line"></i> Services
+                                <i className="bx bx-user-circle"></i> About
                             </NavLink>
                         </li>
                         <li>

@@ -18,8 +18,6 @@ const Layouts = ({ children }) => {
     useEffect(() => {
         AOS.init();
         AOS.refresh();
-//     }, []);
-//     useEffect(() => {
         window.scrollTo({ top: 0, behavior: "smooth" }), [];
     });
     return (

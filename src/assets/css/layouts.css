@@ -413,6 +413,80 @@ section .skill-row {
     text-align: center;
     margin: 10rem auto;
 }
+#projects article,
+#skills article,
+#contact article {
+    width: 100%;
+    max-width: 80%;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 2rem;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: ghs;
+    word-spacing: 2.2px;
+}
+.col .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form h3 {
+    color: #4dbeff;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+.form::placeholder {
+    color: #b0b0b0;
+}
+.form input {
+    outline: none;
+    background: transparent;
+    padding: 1rem 1rem;
+    margin: 0.7rem auto;
+    border-radius: 8px;
+    border: 1px solid #17aaff;
+    color: #17aaff;
+    font-weight: 500;
+    width: 90%;
+}
+.form textarea {
+    outline: none;
+    resize: none;
+    width: 90%;
+    background: transparent;
+    padding: 0.7rem 1rem;
+    margin: 0.7rem auto;
+    border-radius: 10px;
+    border: 1px solid #17aaff;
+    color: #17aaff;
+    font-weight: 500;
+    font-family: Sans-Serif;
+    height: 100px;
+}
+.form input:focus,
+.form textarea:focus {
+    transition: 0.3s ease-in;
+    border: 1px solid #00eb02;
+}
+.form button {
+    outline: none;
+    background: #006dea;
+    padding: 0.6rem 0.7rem;
+    margin: 0.7rem auto;
+    border-radius: 8px;
+    color: #ffffff;
+    font-weight: 500;
+    transition: 0.3s ease-in;
+}
+.form button:hover {
+    background: #00c134;
+}
+
 /* Animation Created */
 @keyframes left-animation {
     from {

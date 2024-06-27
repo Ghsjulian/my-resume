@@ -3,14 +3,14 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer data-aos="zoom-in" className="footer">
             <p>
                 © <span>Copyright</span>
                 
                 <span> All Rights Reserved</span>
             </p>
             <p>
-                Designed by -<NavLink href="/"> Ghs Julian</NavLink>
+                Designed by -<NavLink to="/"> Ghs Julian</NavLink>
             </p>
         </footer>
     );
