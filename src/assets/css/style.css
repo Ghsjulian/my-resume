@@ -26,7 +26,7 @@
 }
 
 .section h2 {
-    color: rgb(74,242,0);
+    color: rgb(74, 242, 0);
     font-weight: 900;
     font-size: 32px;
     text-align: center;
@@ -81,25 +81,25 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: #ffffff;
+    background: #0069a6;
     padding: 0.5rem;
     border-radius: 5px;
-    /* border: 0.1px solid rgb(0, 207, 150); */
+    border: 0.5px solid rgb(255, 255, 255);
 }
 
+/*
 .row .col {
     box-shadow:
         2px 2px 4px #c7c7c7,
         -2px -2px 4px #c7c7c7;
 }
-
+*/
 .row .col::after {
     content: "";
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 40px 15px rgba(0, 0, 0, 0.5);
     background-color: transparent;
     border-radius: 80px / 4px;
 }
@@ -112,7 +112,7 @@
 }
 
 .col h4 {
-    color: rgb(119, 15, 255);
+    color: rgb(81, 253, 255);
     text-align: center;
     justify-content: center;
     font-size: 25px;
@@ -120,7 +120,7 @@
 }
 
 .col .p-text {
-    color: rgb(0, 0, 0);
+    color: rgb(255,255,255);
     font-weight: 400;
     font-size: 16px;
     text-align: left;
@@ -170,13 +170,13 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    background: #ffffff;
+    background: #0069a6;
     padding: 0.5rem;
     border-radius: 5px;
     border: 0.1px solid rgb(0, 207, 150);
-    box-shadow:
+    /* box-shadow:
         2px 2px 4px #c7c7c7,
-        -2px -2px 4px #c7c7c7;
+        -2px -2px 4px #c7c7c7; */
 }
 
 .column h4 {
@@ -195,7 +195,7 @@
 }
 
 .column .p-text {
-    color: rgb(67, 67, 67);
+    color: rgb(255,255,255);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.8rem;

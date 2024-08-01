@@ -17,8 +17,9 @@ const Home = () => {
     return (
         <>
             <HeroSection />
-            <ServiceSection />
             <WhyUs />
+            <ServiceSection />
+            <Projects />
         </>
     );
 };

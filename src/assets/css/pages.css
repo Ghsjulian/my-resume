@@ -371,10 +371,10 @@
     line-height: 1.7rem;
 }
 .col {
-    background: #ffffff;
-    box-shadow:
+    background: #002a41;
+    /* box-shadow:
         2px 2px 4px #c7c7c7,
-        -2px -2px 4px #c7c7c7;
+        -2px -2px 4px #c7c7c7; */
 }
 .card a {
     width: 130px;
